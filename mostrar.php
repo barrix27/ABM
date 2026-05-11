@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "tu_base_de_datos";
+$dbname = "abm";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -41,7 +41,8 @@ $resultado = $conn->query($sql);
             echo "<td>" . $fila["email"] . "</td>"; // [cite: 3]
             echo "<td>
                     <a href='editar.php?id=" . $fila["id"] . "'>Editar</a> | 
-                    <a href='eliminar.php?id=" . $fila["id"] . "' style='color:red;'>Eliminar</a>
+                    <a href='eliminar.php?id=" . $fila["id"] . "' style='color:red;
+                    '>Eliminar</a>
                   </td>";
             echo "</tr>";
         }
